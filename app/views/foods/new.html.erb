@@ -1,0 +1,5 @@
+<%= form_with model: @food do |f| %> 
+  Name: <%= f.text_field :name, placeholder: "Food name" %><br><br>
+  Amount (g): <%= f.text_field :amount, placeholder: 'Amount in grams' %><br><br>
+  <%= f.submit %>
+<% end %> 

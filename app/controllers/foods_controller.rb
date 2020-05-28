@@ -1,6 +1,7 @@
 class FoodsController < ApplicationController
   def index
     @foods = Food.all.order('created_at DESC')
+    @total = @foods.inject(0){|sum, hash| sum + hash[:amount] }
   end
 
   def create
