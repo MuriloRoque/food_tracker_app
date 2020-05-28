@@ -1,0 +1,7 @@
+<h1>List of foods:</h1>
+  <% @foods.each do | food | %>
+    <strong> <%= "food.author.name" %>: </strong>
+    <strong> <%= "food.group.icon" %>: </strong>
+      <p><%= food.name %></p>
+      <p><%= food.amount %></p>
+  <% end %>

@@ -1,5 +1,8 @@
 <% if @user %>
   <h1>Welcome to Food Tracker, <%= @user.name %>!</h1>
+  <%= link_to "All my grouped meals", foods_path %>
+  <%= link_to "All my uncategorized meals", current_user %>
+  <%= link_to "All categories", current_user %>
 <% else %>
   <h1>Welcome to Food Tracker, please log in</h1>
 <% end %>
