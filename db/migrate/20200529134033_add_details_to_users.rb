@@ -4,5 +4,6 @@ class AddDetailsToUsers < ActiveRecord::Migration[6.0]
     add_column :users, :gender, :string
     add_column :users, :height, :decimal
     add_column :users, :weight, :decimal
+    add_column :users, :activity, :string
   end
 end

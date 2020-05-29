@@ -2,10 +2,8 @@
   <h1>Welcome to Food Tracker, <%= @user.name %>!</h1>
   <%= link_to "All my grouped meals", foods_path(type: "grouped") %>
   <%= link_to "All my ungrouped meals", foods_path %>
-  <%= link_to "Calculate your daily calorie needs", groups_path %>
   <%= link_to "All groups", groups_path %>
 <% else %>
   <h1>Welcome to Food Tracker, please log in</h1>
 <% end %>
-
-
+<%= render 'calculate' %>

@@ -16,6 +16,7 @@ class UsersController < ApplicationController
   def show
     if sign_in?
       @user = current_user
+      @total = @user.foods.inject(0){|sum, hash| sum + hash[:amount] }
     else
       @user = nil
     end
@@ -24,6 +25,6 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:name, :age, :gender, :weight, :height)
+    params.require(:user).permit(:name, :age, :gender, :weight, :height, :activity)
   end
 end

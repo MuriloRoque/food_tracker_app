@@ -4,7 +4,8 @@
     Age: <%= f.text_field :age, placeholder: 'Your age here' %><br><br>
     Height: <%= f.text_field :height, placeholder: 'Your height here' %><br><br>
     Weight: <%= f.text_field :weight, placeholder: 'Your weight here' %><br><br>
-    Gender: <%= f.select(:gender, ['Male', 'Female'], include_blank: "Select gender") %>
+    Gender: <%= f.select(:gender, ['Male', 'Female'], include_blank: "Select gender") %><br><br>
+    Activity level: <%= f.select(:activity, ['Sedentary', 'Lightly active', 'Moderatetely active', 'Very active', 'Extra active'], include_blank: "Select activity level") %><br><br>
     <%= f.submit %>
   <% end %> 
 </div>

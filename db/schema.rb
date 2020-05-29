@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(version: 2020_05_29_134033) do
     t.string "gender"
     t.decimal "height"
     t.decimal "weight"
+    t.string "activity"
   end
 
   add_foreign_key "foods", "groups"
