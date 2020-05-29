@@ -1,0 +1,7 @@
+<h1>List of groups:</h1>
+<% @groups.each do | group | %>
+  <p><%= group.created_at %></p>
+  <p><%= link_to group.name, group_path(group) %></p>
+  <p><%= group.icon %></p>
+<% end %>
+<%= link_to "Add new", new_group_path %>

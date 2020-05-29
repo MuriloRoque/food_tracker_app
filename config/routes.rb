@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   post  '/login', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
   resources :foods, only: [:new, :create, :index]
+  resources :groups, only: [:new, :create, :index, :show]
 end

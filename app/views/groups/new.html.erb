@@ -1,0 +1,5 @@
+<%= form_with model: @group do |f| %> 
+  Name: <%= f.text_field :name, placeholder: "Group name" %><br><br>
+  Icon: <%= f.text_field :icon, placeholder: 'Input an image URL(.gif, .jpeg, .jpg or .png)' %><br><br>
+  <%= f.submit %>
+<% end %> 
