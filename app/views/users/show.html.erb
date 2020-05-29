@@ -3,7 +3,7 @@
   <%= link_to "All my grouped meals", foods_path(type: "grouped") %>
   <%= link_to "All my ungrouped meals", foods_path %>
   <%= link_to "All groups", groups_path %>
+  <%= render 'calculate' %>
 <% else %>
-  <h1>Welcome to Food Tracker, please log in</h1>
+  <%= render 'login' %>
 <% end %>
-<%= render 'calculate' %>
