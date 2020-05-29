@@ -1,8 +1,11 @@
 class FoodsController < ApplicationController
   def index
-    @foods = Food.all.order('created_at DESC')
+    if params[:type] == 'grouped'
+      @foods = Food.where(group_id: true)
+    else
+      @foods = Food.where(group_id: nil)
+    end
     @total = @foods.inject(0){|sum, hash| sum + hash[:amount] }
-    # @categorized = true if Food.all.where()
   end
 
   def create
