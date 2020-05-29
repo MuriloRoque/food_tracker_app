@@ -15,6 +15,7 @@ class FoodsController < ApplicationController
 
   def new
     @food = Food.new
+    @groups = Group.all.order('name DESC')
   end
 
   private

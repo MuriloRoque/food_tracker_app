@@ -1,5 +1,6 @@
 <%= form_with model: @food do |f| %> 
   Name: <%= f.text_field :name, placeholder: "Food name" %><br><br>
   Amount (g): <%= f.text_field :amount, placeholder: 'Amount in grams' %><br><br>
+  Group: <%= f.select(:group_id, options_from_collection_for_select(@groups, :id, :name), include_blank: "Select group") %>
   <%= f.submit %>
 <% end %> 
