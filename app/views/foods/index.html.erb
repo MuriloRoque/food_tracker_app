@@ -1,13 +1,11 @@
 <h1>List of foods:</h1>
 <h1>Total amount: <%= @total %> </h1>
 <% @foods.each do | food | %>
-  <% if current_user == food.author %>
-    <p><%= food.created_at %></p>
-    <% if !food.group.nil? %>
-      <p><%= food.group.icon %></p>
-    <% end %>
-    <p><%= food.name %></p>
-    <p><%= food.amount %></p>
+  <p><%= food.created_at %></p>
+  <% if !food.group.nil? %>
+    <p><%= food.group.icon %></p>
   <% end %>
+  <p><%= food.name %></p>
+  <p><%= food.amount %></p>
 <% end %>
 <%= link_to "Add new", new_food_path %>

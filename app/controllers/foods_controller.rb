@@ -1,9 +1,9 @@
 class FoodsController < ApplicationController
   def index
     if params[:type] == 'grouped'
-      @foods = Food.where(group_id: true)
+      @foods = Food.where(author_id: current_user.id, group_id: true)
     else
-      @foods = Food.where(group_id: nil)
+      @foods = Food.where(author_id: current_user.id, group_id: nil)
     end
     @total = @foods.inject(0){|sum, hash| sum + hash[:amount] }
   end
