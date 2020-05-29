@@ -13,7 +13,7 @@
   <body>
     <nav>
       <% if sign_in? %>
-        <%= link_to '#{current_user.name} Profile', current_user %>
+        <%= link_to "#{current_user.name} Profile", current_user %>
         <%= link_to 'Log out', logout_path, method: :delete %>
       <% end %>
     </nav>

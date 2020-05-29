@@ -1,11 +1,15 @@
-<div>
-  <%= form_for @user do |f| %> 
-    Name: <%= f.text_field :name, placeholder: 'Your name here' %><br><br>
-    Age: <%= f.text_field :age, placeholder: 'Your age here' %><br><br>
-    Height: <%= f.text_field :height, placeholder: 'Your height here' %><br><br>
-    Weight: <%= f.text_field :weight, placeholder: 'Your weight here' %><br><br>
-    Gender: <%= f.select(:gender, ['Male', 'Female'], include_blank: "Select gender") %><br><br>
-    Activity level: <%= f.select(:activity, ['Sedentary', 'Lightly active', 'Moderatetely active', 'Very active', 'Extra active'], include_blank: "Select activity level") %><br><br>
-    <%= f.submit %>
+<%= link_to (image_tag "back_arrow.png", class: 'back-arrow'), root_path %>
+<div class="header" >
+  <h1>REGISTER</h1>
+</div>
+<div class="form-div">
+  <%= form_with model: @user, class: 'signup-form' do |f| %> 
+    <%= f.text_field :name, placeholder: 'Full name', class: 'form-option' %>
+    <%= f.text_field :age, placeholder: 'Age (Years)', class: 'form-option' %>
+    <%= f.text_field :height, placeholder: 'Height (Inches)', class: 'form-option' %>
+    <%= f.text_field :weight, placeholder: 'Weight (Pounds)', class: 'form-option' %>
+    <%= f.select(:gender, ['Male', 'Female'], { include_blank: "Select gender" }, { class: 'select-option' }) %>
+    <%= f.select(:activity, ['Sedentary', 'Lightly active', 'Moderatetely active', 'Very active', 'Extra active'], { include_blank: "Select activity level" }, { class: 'select-option' }) %>
+    <%= f.submit 'Next', class: 'submit' %>
   <% end %> 
 </div>
