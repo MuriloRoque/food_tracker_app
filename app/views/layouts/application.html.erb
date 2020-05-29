@@ -6,18 +6,15 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag "https://fonts.googleapis.com/css2?family=Playball&display=swap" %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <nav>
-      <%= link_to 'Home', root_path %>
       <% if sign_in? %>
-        <%= link_to current_user.name, current_user %>
+        <%= link_to '#{current_user.name} Profile', current_user %>
         <%= link_to 'Log out', logout_path, method: :delete %>
-      <% else %>
-        <%= link_to 'Sign in', login_path %>
-        <%= link_to 'Sign up', new_user_path %>
       <% end %>
     </nav>
     <%= yield %>

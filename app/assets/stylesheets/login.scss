@@ -1,3 +1,33 @@
 .logo{
-  font-size: 10rem;
+  text-align: center;
+  padding: 45rem 0;
+  h1{
+    font-size: 10rem;
+    color: #353c47;
+    font-family: 'Playball', cursive;
+    letter-spacing: 1rem;
+  }
+}
+
+.login{
+  position: relative;
+  bottom: 0;
+  margin: 0 3rem;
+  a{
+    display: block;
+    text-align: center;
+    font-size: 4rem;
+    padding: 3rem 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+  }
+  .sign-in{
+    color: #fcf6f0;
+    background-color: #3878c2;
+  }
+  .sign-up{
+    color: #8a8d8f;
+  }
 }
