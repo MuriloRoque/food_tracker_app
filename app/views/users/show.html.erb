@@ -1,5 +1,5 @@
-<div class='user-page'>
-  <% if @user %>
+<% if @user %>
+  <div class='user-page'>
     <%= gravatar_image_tag(current_user.email, alt: current_user.name, class: "gravatar", gravatar: { :size => 250 }) %>
     <h1><%= @user.name %></h1>
     <div class="link-div">
@@ -19,7 +19,7 @@
       <%= link_to 'Log out', logout_path, method: :delete, class: "last-link" %>
     </div>
     <%= render 'calculate' %>
-  <% else %>
-    <%= render 'login' %>
-  <% end %>
-</div>
+  </div>
+<% else %>
+  <%= render 'login' %>
+<% end %>
