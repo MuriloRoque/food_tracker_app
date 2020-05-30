@@ -5,6 +5,7 @@
 <div class="form-div">
   <%= form_with model: @user, class: 'signup-form' do |f| %> 
     <%= f.text_field :name, placeholder: 'Full name', class: 'form-option' %>
+    <%= f.text_field :email, placeholder: 'E-mail', class: 'form-option' %>
     <%= f.text_field :age, placeholder: 'Age (Years)', class: 'form-option' %>
     <%= f.text_field :height, placeholder: 'Height (Inches)', class: 'form-option' %>
     <%= f.text_field :weight, placeholder: 'Weight (Pounds)', class: 'form-option' %>

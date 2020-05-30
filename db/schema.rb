@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_29_134033) do
+ActiveRecord::Schema.define(version: 2020_05_30_193823) do
 
   create_table "foods", force: :cascade do |t|
     t.integer "author_id"
@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 2020_05_29_134033) do
     t.decimal "height"
     t.decimal "weight"
     t.string "activity"
+    t.string "email"
   end
 
   add_foreign_key "foods", "groups"
