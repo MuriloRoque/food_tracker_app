@@ -1,7 +1,7 @@
 class FoodsController < ApplicationController
   def index
     if params[:type] == 'grouped'
-      @foods = Food.where(author_id: current_user.id, group_id: true)
+      @foods = Food.where(author_id: current_user.id).where.not(group_id: nil)
     else
       @foods = Food.where(author_id: current_user.id, group_id: nil)
     end
