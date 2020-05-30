@@ -1,3 +1,57 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.user-page{
+  background-image: linear-gradient(#13345f, #3474a3);
+  text-align: center;
+  padding: 5rem;
+  .gravatar{
+    border-radius: 50%;
+  }
+  h1{
+    color: #abb8cb;
+    font-size: 6rem;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10rem;
+    font-weight: 500;
+  }
+  .link-div{
+    text-align: left;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5rem;
+    img{
+      width: 8rem;
+      height: 8rem;
+      border-radius: 50%;
+      padding: 2rem;
+      border: 0.5rem solid #abb8cb;
+    }
+    a{
+      display: block;
+      text-decoration: none;
+      font-size: 6rem;
+      font-family: 'Roboto', sans-serif;
+      color: #abb8cb;
+      margin: 5rem 0 0 5rem;
+      border-bottom: 0.1rem solid #abb8cb;
+      padding-bottom: 7rem;
+      width: 100%;
+    }
+    .last-link{
+      border-bottom: none;
+    }
+  }
+  .consume{
+    margin-top: 8rem;
+    color: #abb8cb;
+    font-size: 6rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    .total-msg{
+      color: #c4b66a;
+      font-weight: 900;
+    }
+  }
+}
