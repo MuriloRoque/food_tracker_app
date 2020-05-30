@@ -1,3 +1,106 @@
 // Place all the styles related to the Foods controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.fixed{
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  .menu{
+    width: 6rem;
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+  }
+  
+  .food-header{
+    text-align: center;
+    background-color: #326db1;
+    h1{
+      color: #fff;
+      font-size: 5rem;
+      margin: 0;
+      padding: 3rem 0;
+      font-weight: 300;
+      font-family: 'Roboto', sans-serif;
+      cursor: default;
+    }
+  }
+  
+  .total-food{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 4.5rem 2.5rem;
+    border-bottom: 0.1rem solid #c0c0c5;
+    span{
+      color: #959598;
+      font-size: 5rem;
+    }
+    .total{
+      font-weight: 700;
+      color: #424a53;
+    }
+  }  
+}
+.food-list{
+  margin: 29.7rem 0 19.4rem 0;
+  .each-food{
+    display: flex;
+    background-color: #fff;
+    margin: 3rem;
+    border: 0.1rem solid #c0c0c5;
+    padding: 3rem;
+    align-items: center;
+    .food-icon{
+      color: #959598;
+      font-size: 5rem;
+      width: 20rem;
+      height: 20rem;
+      margin-right: 5rem;
+    }
+    .food-right{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      .name-created{
+        .food-name{
+          color: #959598;
+          font-size: 5rem;
+          margin: 4rem 0 7rem 0;
+        }
+        .created{
+          color: #959598;
+          font-size: 3rem;
+          margin: 0;
+        }
+      }
+      .food-amount{
+        font-size: 5rem;
+        font-weight: 700;
+        color: #424a53;
+      }
+    }
+  }  
+}
+
+.add-new{
+  background-color: #60b523;
+  text-align: center;
+  padding: 3rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  a{
+    border: 0.3rem solid #bae1a8;
+    font-size: 5rem;
+    color: #dff3da;
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none;
+    padding: 4rem 0;
+    width: 100%;
+    font-weight: 500;
+  }
+}

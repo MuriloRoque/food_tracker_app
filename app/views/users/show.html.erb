@@ -3,6 +3,7 @@
   <%= link_to "All my grouped meals", foods_path(type: "grouped") %>
   <%= link_to "All my ungrouped meals", foods_path %>
   <%= link_to "All groups", groups_path %>
+  <%= link_to 'Log out', logout_path, method: :delete %>
   <%= render 'calculate' %>
 <% else %>
   <%= render 'login' %>
