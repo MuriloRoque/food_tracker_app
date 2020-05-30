@@ -45,7 +45,7 @@
   }  
 }
 .food-list{
-  margin: 29.7rem 0 19.4rem 0;
+  margin: 29.7rem 0 23.4rem 0;
   .each-food{
     display: flex;
     background-color: #fff;
@@ -88,7 +88,6 @@
 .add-new{
   background-color: #60b523;
   text-align: center;
-  padding: 3rem;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -100,7 +99,7 @@
     display: block;
     text-decoration: none;
     padding: 4rem 0;
-    width: 100%;
     font-weight: 500;
+    margin: 3rem;
   }
 }
