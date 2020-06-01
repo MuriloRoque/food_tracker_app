@@ -3,11 +3,11 @@ class FoodsController < ApplicationController
 
   def index
     if params[:type] == 'grouped'
-      @foods = Food.current_author(current_user)
+      @foods = Food.grouped_ones(current_user)
     else
-      @foods = Food.where(author_id: current_user.id, group_id: nil)
+      @foods = Food.ungrouped_ones(current_user)
     end
-    @total = @foods.inject(0){|sum, hash| sum + hash[:amount] }
+    @total = injection
   end
 
   def create
