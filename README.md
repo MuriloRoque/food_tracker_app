@@ -2,7 +2,7 @@
 
 # Food Tracker App
 
-![App Demo](https://gph.is/g/4oR7xeD)
+![App Demo](https://media.giphy.com/media/ZeX6jRq7IvKGLWDYyS/source.mov)
 
 First of all, you can find this project's requirements [here](https://www.notion.so/Group-our-transactions-ccea2b6642664540a70de9f30bdff4ce).
 The desisn colors and layout were created by [Gregoire Vella](https://www.behance.net/gregoirevella).
