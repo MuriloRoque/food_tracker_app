@@ -6,11 +6,11 @@ class Food < ApplicationRecord
   validates :amount, presence: true, numericality: { less_than_or_equal_to: 5000, only_integer: true }
 
   scope :grouped_ones, lambda { |user|
-    where(author_id: user.id).where.not(group_id: nil)
+    where(author_id: user.id).where.not(group_id: nil).order('created_at DESC')
   }
 
   scope :ungrouped_ones, lambda { |user|
-    where(author_id: user.id).where(group_id: nil)
+    where(author_id: user.id).where(group_id: nil).order('created_at DESC')
   }
 
   scope :current_group, lambda { |ident|
