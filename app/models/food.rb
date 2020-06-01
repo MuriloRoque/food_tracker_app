@@ -13,4 +13,8 @@ class Food < ApplicationRecord
   scope :ungrouped_ones, lambda { |user|
     where(author_id: user.id).where(group_id: nil)
   }
+
+  scope :current_group, lambda { |ident|
+    where(group_id: ident)
+  }
 end

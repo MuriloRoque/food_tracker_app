@@ -4,8 +4,8 @@ class GroupsController < ApplicationController
   end
 
   def show
-    @foods = Food.where(group_id: params[:id])
-    @total = @foods.inject(0){|sum, hash| sum + hash[:amount] }
+    @foods = Food.current_group(params[:id])
+    @total = injection
   end
 
   def create
