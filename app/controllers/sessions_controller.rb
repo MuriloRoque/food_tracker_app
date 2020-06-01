@@ -3,8 +3,13 @@ class SessionsController < ApplicationController
 
   def create
     @user = User.find_by(name: params[:session][:name])
-    log_in @user if @user
-    redirect_to root_url
+    if @user
+      log_in @user
+      redirect_to root_url
+    else
+      @error = true
+      render :new
+    end
   end
 
   def destroy

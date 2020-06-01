@@ -3,7 +3,10 @@
   <h1>ADD NEW MEAL</h1>
 </div>
 <div class="form-div">
-  <%= form_with model: @food, class: 'signup-form' do |f| %> 
+  <%= form_with model: @food, local: true, class: 'signup-form' do |f| %>
+    <% @food.errors.full_messages.each do |error| %>
+      <p class="errors">* <%= error %></p>
+    <% end %>
     <%= f.text_field :name, placeholder: "Food name", class: 'form-option' %>
     <%= f.text_field :amount, placeholder: 'Amount (kcal)', class: 'form-option' %>
     <%= f.select(:group_id, options_from_collection_for_select(@groups, :id, :name), { include_blank: "Select group" }, { class: 'select-option' } ) %>

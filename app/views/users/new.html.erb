@@ -3,7 +3,10 @@
   <h1>REGISTER</h1>
 </div>
 <div class="form-div">
-  <%= form_with model: @user, class: 'signup-form' do |f| %> 
+  <%= form_with model: @user, local: true, class: 'signup-form' do |f| %>
+    <% @user.errors.full_messages.each do |error| %>
+      <p class="errors">* <%= error %></p>
+    <% end %>
     <%= f.text_field :name, placeholder: 'Full name', class: 'form-option' %>
     <%= f.text_field :email, placeholder: 'E-mail', class: 'form-option' %>
     <%= f.text_field :age, placeholder: 'Age (Years)', class: 'form-option' %>
