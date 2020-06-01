@@ -10,22 +10,22 @@ RSpec.describe Food, type: :model do
     end
 
     it "Shouldn't save if name is less than 3 characters" do
-      e = Food.new(name: "ba", amount: 500)
+      e = Food.new(name: 'ba', amount: 500)
       expect(e.save).to eq(false)
     end
 
     it "Shouldn't save if name is more than 15 characters" do
-      e = Food.new(name: "banana nanica caseira", amount: 500)
+      e = Food.new(name: 'banana nanica caseira', amount: 500)
       expect(e.save).to eq(false)
     end
 
     it "Shouldn't save if there's no amount" do
-      e = Food.new(name: "banana")
+      e = Food.new(name: 'banana')
       expect(e.save).to eq(false)
     end
 
     it "Shouldn't save if the amount is more than 5000" do
-      e = Food.new(name: "banana", amount: 6000)
+      e = Food.new(name: 'banana', amount: 6000)
       expect(e.save).to eq(false)
     end
   end

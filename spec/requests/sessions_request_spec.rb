@@ -3,7 +3,8 @@ require 'capybara/rspec'
 
 describe 'Signing in', type: :feature do
   it 'tests if sign in is successful' do
-    user = User.new(name: 'Murilo', age: 27, height: 10, weight: 500, gender: "Male", email: 'murilo@gmail.com', activity: "Extra active")
+    user = User.new(name: 'Murilo', age: 27, height: 10, weight: 500, gender: 'Male', email: 'murilo@gmail.com',
+                    activity: 'Extra active')
     user.save
     visit '/login'
     within('form') do

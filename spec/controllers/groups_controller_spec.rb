@@ -3,7 +3,8 @@ require 'capybara/rspec'
 
 describe 'Groups controller', type: :feature do
   before :each do
-    u = User.new(name: 'Murilo', age: 27, height: 10, weight: 500, gender: "Male", email: 'murilo@gmail.com', activity: "Extra active")
+    u = User.new(name: 'Murilo', age: 27, height: 10, weight: 500, gender: 'Male', email: 'murilo@gmail.com',
+                 activity: 'Extra active')
     u.save
     f = Food.new(name: 'banana', amount: 300, author_id: u.id)
     f.save

@@ -1,12 +1,12 @@
 class FoodsController < ApplicationController
-  before_action :all_groups, only: [:new, :create]
+  before_action :all_groups, only: %i[new create]
 
   def index
-    if params[:type] == 'grouped'
-      @foods = Food.grouped_ones(current_user)
-    else
-      @foods = Food.ungrouped_ones(current_user)
-    end
+    @foods = if params[:type] == 'grouped'
+               Food.grouped_ones(current_user)
+             else
+               Food.ungrouped_ones(current_user)
+             end
     @total = injection
   end
 
@@ -16,7 +16,7 @@ class FoodsController < ApplicationController
       if @food.group.nil?
         redirect_to foods_path
       else
-        redirect_to foods_path(type: "grouped")
+        redirect_to foods_path(type: 'grouped')
       end
     else
       render :new

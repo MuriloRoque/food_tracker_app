@@ -3,7 +3,7 @@
   <h1>ADD NEW GROUP</h1>
 </div>
 <div class="form-div">
-  <%= form_with model: @group, class: 'signup-form' do |f| %> 
+  <%= form_with model: @group, class: 'signup-form' do |f| %>
     <%= f.text_field :name, placeholder: "Group name", class: 'form-option' %>
     <%= f.text_field :icon, placeholder: 'Input an image URL (Optional)', class: 'form-option' %>
     <p class='format-notice'>* (.gif, .jpeg, .jpg or .png)</p>
