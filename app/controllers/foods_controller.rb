@@ -12,7 +12,11 @@ class FoodsController < ApplicationController
     @groups = Group.all.order('name DESC')
     @food = current_user.foods.build(food_params)
     if @food.save
-      redirect_to foods_path
+      if @food.group.nil?
+        redirect_to foods_path
+      else
+        redirect_to foods_path(type: "grouped")
+      end
     else
       render :new
     end
