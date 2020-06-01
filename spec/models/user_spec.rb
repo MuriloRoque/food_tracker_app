@@ -13,9 +13,28 @@ RSpec.describe User, type: :model do
       expect(u.save).to eq(false)
     end
 
+    it "Shouldn't save if the name is more than 10 characters" do
+      u = User.new(name: 'MuriloRoque', age: 27, height: 10, weight: 500, gender: "Male", email: 'muriloengqui@gmail.com')
+      expect(u.save).to eq(false)
+    end
+
+    it "Shouldn't save if the name is already taken" do
+      u1 = User.new(name: 'Murilo', age: 27, height: 10, weight: 500, gender: "Male", email: 'muriloengqui1@gmail.com')
+      u1.save
+      u2 = User.new(name: 'Murilo', age: 27, height: 10, weight: 500, gender: "Male", email: 'muriloengqui2@gmail.com')
+      expect(u2.save).to eq(false)
+    end
+
     it "Shouldn't save if the email is less than 11 characters" do
       u = User.new(name: 'Murilo', age: 27, height: 10, weight: 500, gender: "Male", email: '@gmail.com')
       expect(u.save).to eq(false)
+    end
+
+    it "Shouldn't save if the e-mail is already taken" do
+      u1 = User.new(name: 'Murilo1', age: 27, height: 10, weight: 500, gender: "Male", email: 'muriloengqui@gmail.com')
+      u1.save
+      u2 = User.new(name: 'Murilo2', age: 27, height: 10, weight: 500, gender: "Male", email: 'muriloengqui@gmail.com')
+      expect(u2.save).to eq(false)
     end
 
     it "Shouldn't save if the age is less than 1" do
