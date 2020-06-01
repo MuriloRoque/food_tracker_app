@@ -5,7 +5,7 @@ require 'capybara/rspec'
 RSpec.describe User, type: :model do
   context 'validation tests' do
     it 'Should be valid if the attributes are' do
-      expect(User.new(name: 'Murilo', age: 27, height: 10, weight: 500, gender: "Male", email: 'muriloengqui@gmail.com', activity: "Extra active")).to be_valid
+      expect(User.new(name: 'MuriloR', age: 27, height: 10, weight: 500, gender: "Male", email: 'muriloengqui@gmail.com', activity: "Extra active")).to be_valid
     end
 
     it "Shouldn't save if the name is less than 6 characters" do
@@ -63,7 +63,7 @@ RSpec.describe User, type: :model do
     end
 
     it 'Should save if everything validates' do
-      u = User.new(name: 'Murilo', age: 27, height: 10, weight: 500, gender: "Male", email: 'muriloengqui@gmail.com', activity: "Extra active")
+      u = User.new(name: 'MuriloRo', age: 27, height: 10, weight: 500, gender: "Male", email: 'muriloengqui@gmail.com', activity: "Extra active")
       expect(u.save).to eq(true)
     end
   end

@@ -5,7 +5,7 @@
 <div class="form-div">
   <%= form_with model: @food, class: 'signup-form' do |f| %> 
     <%= f.text_field :name, placeholder: "Food name", class: 'form-option' %>
-    <%= f.text_field :amount, placeholder: 'Amount (kcal)', class: 'form-option' %><br><br>
+    <%= f.text_field :amount, placeholder: 'Amount (kcal)', class: 'form-option' %>
     <%= f.select(:group_id, options_from_collection_for_select(@groups, :id, :name), { include_blank: "Select group" }, { class: 'select-option' } ) %>
     <%= f.submit 'Add', class: 'submit' %>
   <% end %> 
