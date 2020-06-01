@@ -7,4 +7,5 @@ class User < ApplicationRecord
   validates :weight, presence: true, numericality: { less_than_or_equal_to: 1200 }
   validates :gender, presence: true
   validates :email, presence: true, uniqueness: true, length: { minimum: 11 }
+  validates :activity, presence: true
 end
