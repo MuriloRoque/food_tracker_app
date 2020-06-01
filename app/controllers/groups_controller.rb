@@ -13,7 +13,12 @@ class GroupsController < ApplicationController
     if @group.save
       redirect_to group_path(@group)
     else
-      render :new
+      @group.icon = params[:icon] || "icon.png"
+      if @group.save
+        redirect_to group_path(@group)
+      else
+        render :new
+      end
     end
   end
 

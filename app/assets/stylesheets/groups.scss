@@ -2,6 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+.group-back-arrow{
+  width: 6rem;
+  position: fixed;
+  top: 3rem;
+  left: 3rem;
+}
+
 .format-notice{
   font-size: 3rem;
   font-family: 'Roboto', sans-serif;
@@ -14,7 +21,7 @@
   background-image: linear-gradient(#13345f, #3474a3);
   text-align: center;
   padding: 5rem 5rem 35rem 5rem;
-  height: 100vh;
+  margin-bottom: 20rem;
   h1{
     color: #abb8cb;
     font-size: 6rem;
