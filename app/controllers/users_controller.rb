@@ -16,7 +16,7 @@ class UsersController < ApplicationController
   def show
     if sign_in?
       @user = current_user
-      @total = @user.foods.inject(0){|sum, hash| sum + hash[:amount] }
+      @total = user_injection
     else
       @user = nil
     end
