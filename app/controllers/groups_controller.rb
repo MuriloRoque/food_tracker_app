@@ -13,7 +13,7 @@ class GroupsController < ApplicationController
     if @group.save
       redirect_to group_path(@group)
     else
-      @group.icon = params[:icon] || "icon.png"
+      @group.icon = params[:icon] || "https://data.whicdn.com/images/182762798/original.gif"
       if @group.save
         redirect_to group_path(@group)
       else

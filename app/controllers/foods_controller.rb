@@ -1,7 +1,9 @@
 class FoodsController < ApplicationController
+  before_action :all_groups, only: [:new, :create]
+
   def index
     if params[:type] == 'grouped'
-      @foods = Food.where(author_id: current_user.id).where.not(group_id: nil)
+      @foods = Food.current_author(current_user)
     else
       @foods = Food.where(author_id: current_user.id, group_id: nil)
     end
@@ -9,7 +11,6 @@ class FoodsController < ApplicationController
   end
 
   def create
-    @groups = Group.all.order('name DESC')
     @food = current_user.foods.build(food_params)
     if @food.save
       if @food.group.nil?
@@ -24,6 +25,9 @@ class FoodsController < ApplicationController
 
   def new
     @food = Food.new
+  end
+
+  def all_groups
     @groups = Group.all.order('name DESC')
   end
 
