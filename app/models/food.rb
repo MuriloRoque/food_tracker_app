@@ -17,5 +17,5 @@ class Food < ApplicationRecord
     where(group_id: ident)
   }
 
-  scope :daily, -> { where(created_at: Time.now.beginning_of_day .. Time.zone.now) }
+  scope :daily, -> { where(created_at: Time.now.beginning_of_day..Time.zone.now) }
 end

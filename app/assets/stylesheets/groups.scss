@@ -20,22 +20,21 @@
 .group-user-page{
   background-image: linear-gradient(#13345f, #3474a3);
   text-align: center;
-  padding: 2rem 2rem 0 5rem;
-  height: 100%;
-  margin-bottom: 6rem;
-  overflow: auto;
+  padding: 2rem 2rem 2rem 5rem;
+  margin-bottom: 3.5rem;
   h1{
     color: #abb8cb;
     font-size: 2rem;
     font-family: 'Roboto', sans-serif;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
+    margin-right: 3rem;
     font-weight: 500;
   }
   .group-div{
     display: flex;
     align-items: center;
     margin-bottom: 2rem;
-    justify-content: left;
+    justify-content: center;
     font-size: 2rem;
     font-family: 'Roboto', sans-serif;
     color: #abb8cb;
@@ -81,4 +80,18 @@
   color: #959598;
   font-size: 1rem;
   margin: 0;
+}
+
+.pagination{
+  font-size: 2.5rem;
+  color: #959598;
+  width: 9.5rem;
+  position: absolute;
+  top: 0.9rem;
+  right: 1rem;
+  a{
+    text-decoration: none;
+    color: #a5a5f8;
+    font-weight: 700;
+  }
 }
