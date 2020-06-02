@@ -5,9 +5,12 @@
 .user-page{
   background-image: linear-gradient(#13345f, #3474a3);
   text-align: center;
-  padding: 2rem;
+  padding: 0 2rem;
+  overflow: auto;
+  height: 100%;
   .gravatar{
     border-radius: 50%;
+    margin-top: 2rem;
   }
   h1{
     color: #c9d2df;
@@ -20,7 +23,9 @@
     text-align: left;
     display: flex;
     align-items: center;
-    margin-bottom: 0;
+    max-width: 425px;
+    margin: 0 auto;
+    min-width: 320px;
     img{
       width: 2rem;
       height: 2rem;
@@ -44,11 +49,14 @@
     }
   }
   .consume{
-    margin-top: 3rem;
+    margin-top: 1rem;
     color: #c9d2df;
     font-size: 2rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
+    max-width: 425px;
+    margin: 0 auto;
+    min-width: 320px;
     .total-msg{
       color: #c4b66a;
       font-weight: 900;
