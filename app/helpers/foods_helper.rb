@@ -4,6 +4,6 @@ module FoodsHelper
   end
 
   def user_injection
-    @user.foods.inject(0) { |sum, hash| sum + hash[:amount] }
+    Food.daily.where(author_id: @user.id).inject(0) { |sum, hash| sum + hash[:amount] }
   end
 end
