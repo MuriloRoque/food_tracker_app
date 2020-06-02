@@ -8,10 +8,10 @@
   z-index: 1;
   top: 0;
   .menu{
-    width: 6rem;
+    width: 2rem;
     position: absolute;
-    top: 3rem;
-    left: 3rem;
+    top: 0.9rem;
+    left: 1rem;
   }
   
   .food-header{
@@ -19,9 +19,9 @@
     background-color: #326db1;
     h1{
       color: #fff;
-      font-size: 5rem;
+      font-size: 1.8rem;
       margin: 0;
-      padding: 3rem 0;
+      padding: 1rem 0;
       font-weight: 300;
       font-family: 'Roboto', sans-serif;
       cursor: default;
@@ -32,11 +32,11 @@
     display: flex;
     justify-content: space-between;
     background-color: #fff;
-    padding: 4.5rem 2.5rem;
+    padding: 2rem 1rem;
     border-bottom: 0.1rem solid #c0c0c5;
     span{
       color: #959598;
-      font-size: 5rem;
+      font-size: 2rem;
     }
     .total{
       font-weight: 700;
@@ -45,20 +45,20 @@
   }  
 }
 .food-list{
-  margin: 29.7rem 0 23.4rem 0;
+  margin: 11.5rem 0 8.2rem 0;
   .each-food{
     display: flex;
     background-color: #fff;
-    margin: 3rem;
+    margin: 1rem;
     border: 0.1rem solid #c0c0c5;
-    padding: 3rem;
+    padding: 1rem;
     align-items: center;
     .food-icon{
       color: #959598;
-      font-size: 5rem;
-      width: 20rem;
-      height: 20rem;
-      margin-right: 5rem;
+      font-size: 2rem;
+      width: 12rem;
+      height: 12rem;
+      margin-right: 2rem;
     }
     .food-right{
       display: flex;
@@ -67,17 +67,17 @@
       .name-created{
         .food-name{
           color: #959598;
-          font-size: 5rem;
-          margin: 4rem 0 7rem 0;
+          font-size: 2rem;
+          margin: 2rem 0 3rem 0;
         }
         .created{
           color: #959598;
-          font-size: 3rem;
+          font-size: 1rem;
           margin: 0;
         }
       }
       .food-amount{
-        font-size: 5rem;
+        font-size: 2rem;
         font-weight: 700;
         color: #424a53;
       }
@@ -92,14 +92,14 @@
   bottom: 0;
   width: 100%;
   a{
-    border: 0.3rem solid #bae1a8;
-    font-size: 5rem;
+    border: 0.2rem solid #bae1a8;
+    font-size: 1.6rem;
     color: #dff3da;
     text-transform: uppercase;
     display: block;
     text-decoration: none;
-    padding: 4rem 0;
+    padding: 1.5rem 0;
     font-weight: 500;
-    margin: 3rem;
+    margin: 1rem;
   }
 }
