@@ -20,9 +20,10 @@
 .group-user-page{
   background-image: linear-gradient(#13345f, #3474a3);
   text-align: center;
-  padding: 5rem 5rem 35rem 5rem;
+  padding: 5rem 5rem 0 15rem;
   height: 100%;
   margin-bottom: 20rem;
+  overflow: auto;
   h1{
     color: #abb8cb;
     font-size: 6rem;
@@ -34,7 +35,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 5rem;
-    justify-content: center;
+    justify-content: left;
     font-size: 6rem;
     font-family: 'Roboto', sans-serif;
     color: #abb8cb;

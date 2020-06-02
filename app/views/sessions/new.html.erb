@@ -7,7 +7,7 @@
     <% if @error %>
       <p class="errors">* There are no users with that name!</p>
     <% end %>
-    Name: <%= f.text_field :name, placeholder: 'Your name here', class: 'form-option' %> 
+    <%= f.text_field :name, placeholder: 'Your name here', class: 'form-option' %> 
     <%= f.submit 'Log in', class: 'submit' %>
   <% end %> 
 </div>
