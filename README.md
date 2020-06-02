@@ -5,8 +5,10 @@
 ![App Demo](https://media.giphy.com/media/ZeX6jRq7IvKGLWDYyS/200w_d.gif)
 
 First of all, you can find this project's requirements [here](https://www.notion.so/Group-our-transactions-ccea2b6642664540a70de9f30bdff4ce).
+
 The desisn colors and layout were created by [Gregoire Vella](https://www.behance.net/gregoirevella).
-[Video Presentation](loom.com)
+
+[Video Presentation](https://www.loom.com/share/cf3ead2a84a84a66807758dac37dc268)
 
 In this project I:
 
