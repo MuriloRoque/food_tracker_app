@@ -22,6 +22,8 @@
     text-decoration: none;
     font-weight: 300;
     font-family: 'Roboto', sans-serif;
+    max-width: 425px;
+    margin: 0 auto;
   }
   .sign-in{
     color: #fcf6f0;
@@ -34,6 +36,8 @@
 
 .form-div{
   border: 0.1rem solid #c0c0c5;
+  max-width: 425px;
+  margin: 0 auto;
   .signup-form{
     background-color: #fff;
     color: #dbdcde;
@@ -58,6 +62,7 @@
       color: #444;
       padding: .3em 1em .2em 1rem;
       width: 100%;
+      max-width: 425px;
       margin-top: 2rem;
       border: 0.1rem solid #c0c0c5;
       box-shadow: 0 0.1rem 0 0.1rem rgba(0,0,0,.04);
