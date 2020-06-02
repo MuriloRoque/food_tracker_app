@@ -3,14 +3,14 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 .group-back-arrow{
-  width: 6rem;
+  width: 2.5rem;
   position: fixed;
-  top: 3rem;
-  left: 3rem;
+  top: 0.9rem;
+  left: 1rem;
 }
 
 .format-notice{
-  font-size: 3rem;
+  font-size: 1rem;
   font-family: 'Roboto', sans-serif;
   color: #5e6163;
   font-weight: 700;
@@ -20,23 +20,23 @@
 .group-user-page{
   background-image: linear-gradient(#13345f, #3474a3);
   text-align: center;
-  padding: 5rem 5rem 0 15rem;
+  padding: 2rem 2rem 0 5rem;
   height: 100%;
-  margin-bottom: 20rem;
+  margin-bottom: 6rem;
   overflow: auto;
   h1{
     color: #abb8cb;
-    font-size: 6rem;
+    font-size: 2rem;
     font-family: 'Roboto', sans-serif;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
     font-weight: 500;
   }
   .group-div{
     display: flex;
     align-items: center;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     justify-content: left;
-    font-size: 6rem;
+    font-size: 2rem;
     font-family: 'Roboto', sans-serif;
     color: #abb8cb;
     a{
@@ -44,15 +44,16 @@
       display: block;
       text-decoration: none;
       .group-icon{
-        width: 20rem;
-        height: 20rem;
+        width: 7.5rem;
+        height: 7.5rem;
         border-radius: 50%;
       }
     }
     .name-date{
-      margin-left: 5rem;
+      margin-left: 2rem;
+      text-align: left;
       .group-created{
-        font-size: 3rem;
+        font-size: 1.2rem;
       }
     }
   }
@@ -64,20 +65,20 @@
   bottom: 0;
   width: 100%;
   a{
-    border: 0.3rem solid #bae1a8;
-    font-size: 5rem;
+    border: 0.2rem solid #bae1a8;
+    font-size: 1.6rem;
     color: #dff3da;
     text-transform: uppercase;
     display: block;
     text-decoration: none;
-    padding: 4rem 0;
+    padding: 1.5rem 0;
     font-weight: 500;
-    margin: 3rem;
+    margin: 1rem;
   }
 }
 
 .food-author{
   color: #959598;
-  font-size: 3rem;
+  font-size: 1rem;
   margin: 0;
 }
