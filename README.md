@@ -47,7 +47,7 @@ Ruby on Rails, HTML and SCSS.
 
 ## Live Demo
 
-Not avaiable at the moment, it will be in here soon.
+[Click here to see it on Heroku!](https://murilo-food-tracker.herokuapp.com/)
 
 ## Getting Started
 
