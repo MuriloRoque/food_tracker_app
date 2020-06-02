@@ -5,38 +5,38 @@
 .user-page{
   background-image: linear-gradient(#13345f, #3474a3);
   text-align: center;
-  padding: 5rem;
+  padding: 2rem;
   .gravatar{
     border-radius: 50%;
   }
   h1{
-    color: #abb8cb;
-    font-size: 6rem;
+    color: #c9d2df;
+    font-size: 2rem;
     font-family: 'Roboto', sans-serif;
-    margin-bottom: 10rem;
+    margin-bottom: 3rem;
     font-weight: 500;
   }
   .link-div{
     text-align: left;
     display: flex;
     align-items: center;
-    margin-bottom: 5rem;
+    margin-bottom: 0;
     img{
-      width: 8rem;
-      height: 8rem;
+      width: 2rem;
+      height: 2rem;
       border-radius: 50%;
-      padding: 2rem;
-      border: 0.5rem solid #abb8cb;
+      padding: 1rem;
+      border: 0.2rem solid #abb8cb;
     }
     a{
       display: block;
       text-decoration: none;
-      font-size: 6rem;
+      font-size: 1.8rem;
       font-family: 'Roboto', sans-serif;
-      color: #abb8cb;
-      margin: 5rem 0 0 5rem;
-      border-bottom: 0.1rem solid #abb8cb;
-      padding-bottom: 7rem;
+      color: #c9d2df;
+      margin: 2.5rem 0 0 1.5rem;
+      border-bottom: 0.05rem solid #abb8cb3a;
+      padding-bottom: 3rem;
       width: 100%;
     }
     .last-link{
@@ -44,9 +44,9 @@
     }
   }
   .consume{
-    margin-top: 8rem;
-    color: #abb8cb;
-    font-size: 6rem;
+    margin-top: 3rem;
+    color: #c9d2df;
+    font-size: 2rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     .total-msg{

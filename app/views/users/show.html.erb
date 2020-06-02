@@ -1,6 +1,6 @@
 <% if @user %>
   <div class='user-page'>
-    <%= gravatar_image_tag(current_user.email, alt: current_user.name, class: "gravatar", gravatar: { :size => 250 }) %>
+    <%= gravatar_image_tag(current_user.email, alt: current_user.name, class: "gravatar", gravatar: { :size => 100 }) %>
     <h1><%= @user.name %></h1>
     <div class="link-div">
       <%= image_tag "grouped.png" %>
