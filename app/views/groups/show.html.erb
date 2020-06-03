@@ -1,0 +1,28 @@
+<div class='fixed'>
+  <%= link_to (image_tag "menu.png", class: 'menu'), root_path %>
+  <div class="food-header" >
+    <h1>FOODS IN THIS GROUP</h1>
+  </div>
+  <div class = "total-food">
+    <span>Total amount</span>
+    <span class="total"><%= @total %> kcal</span>
+  </div>
+</div>
+<div class='food-list'>
+  <% @foods.each do | food | %>
+    <div class="each-food">
+      <%= image_tag food.group.icon, class: 'food-icon' %>
+      <div class="food-right">
+        <div class="name-created">
+          <p class="food-name"><%= food.name %></p>
+          <p class="food-author"><strong>Author: </strong><%= food.author.name %></p>
+          <p class="created"><%= food.created_at.strftime("%d %b %Y") %></p>
+        </div>
+        <p class="food-amount"><%= food.amount %> kcal</p>
+      </div>
+    </div>
+  <% end %>
+</div>
+<div class='add-new'>
+  <%= link_to "Add new", new_food_path %>
+</div>
