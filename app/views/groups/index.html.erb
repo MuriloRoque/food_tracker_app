@@ -1,0 +1,17 @@
+<div class='group-user-page'>
+  <%= link_to (image_tag "menu.png", class: 'group-back-arrow'), root_path %>
+  <h1>GROUPS</h1>
+  <%= will_paginate @groups, class: 'pagination', previous_label: '<', next_label: '>' %>
+  <% @groups.each do | group | %>
+    <div class="group-div">
+      <%= link_to (image_tag group.icon, class: 'group-icon'), group_path(group) %>
+      <div class="name-date">
+        <%= link_to group.name, group_path(group) %>
+        <p class="group-created">Created at <%= group.created_at.strftime("%d %b %Y") %></p>
+      </div>
+    </div>
+  <% end %>
+</div>
+<div class='group-add-new'>
+  <%= link_to "Add new", new_group_path %>
+</div>

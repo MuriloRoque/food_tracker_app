@@ -1,0 +1,19 @@
+<%= link_to (image_tag "back_arrow.png", class: 'back-arrow'), root_path %>
+<div class="header" >
+  <h1>REGISTER</h1>
+</div>
+<div class="form-div">
+  <%= form_with model: @user, local: true, class: 'signup-form' do |f| %>
+    <% @user.errors.full_messages.each do |error| %>
+      <p class="errors">* <%= error %></p>
+    <% end %>
+    <%= f.text_field :name, placeholder: 'Full name', class: 'form-option' %>
+    <%= f.text_field :email, placeholder: 'E-mail', class: 'form-option' %>
+    <%= f.text_field :age, placeholder: 'Age (Years)', class: 'form-option' %>
+    <%= f.text_field :height, placeholder: 'Height (Inches)', class: 'form-option' %>
+    <%= f.text_field :weight, placeholder: 'Weight (Pounds)', class: 'form-option' %>
+    <%= f.select(:gender, ['Male', 'Female'], { include_blank: "Select gender" }, { class: 'select-option' }) %>
+    <%= f.select(:activity, ['Sedentary', 'Lightly active', 'Moderately active', 'Very active', 'Extra active'], { include_blank: "Select activity level" }, { class: 'select-option' }) %>
+    <%= f.submit 'Sign up', class: 'submit' %>
+  <% end %> 
+</div>

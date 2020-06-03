@@ -1,0 +1,6 @@
+<% result = calories(@user.age, @user.gender, @user.height, @user.weight, @user.activity) %>
+<% if @total < result %>
+  <p class="consume">You already consumed <span class="total-msg"><%= @total %></span> kcal today, you still need to consume <span class="total-msg"><%= result - @total %></span> kcal in order to achieve your daily goal. </p>
+<% else %>
+  <p class="consume">You already consumed <span class="total-msg"><%= @total %></span> kcal today, you consumed <span class="total-msg"><%= @total - result %></span> more kcal than your daily goal. </p>
+<% end %>

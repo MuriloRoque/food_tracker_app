@@ -1,0 +1,102 @@
+// Place all the styles related to the Groups controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.group-back-arrow{
+  width: 2.5rem;
+  position: fixed;
+  top: 0.9rem;
+  left: 1rem;
+}
+
+.format-notice{
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  color: #5e6163;
+  font-weight: 700;
+  text-align: left;
+  margin: 1rem 0 0 1rem;
+}
+.group-user-page{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(#13345f, #3474a3);
+  text-align: center;
+  padding: 2rem 2rem 2rem 5rem;
+  margin-bottom: 3.5rem;
+  h1{
+    color: #abb8cb;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 2rem;
+    margin-right: 3rem;
+    font-weight: 500;
+  }
+  .group-div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    color: #abb8cb;
+    a{
+      color: #abb8cb;
+      display: block;
+      text-decoration: none;
+      .group-icon{
+        width: 7.5rem;
+        height: 7.5rem;
+        border-radius: 50%;
+      }
+    }
+    .name-date{
+      margin-left: 2rem;
+      text-align: left;
+      .group-created{
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+.group-add-new{
+  background-color: #60b523;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  a{
+    border: 0.2rem solid #bae1a8;
+    font-size: 1.6rem;
+    color: #dff3da;
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none;
+    padding: 1.5rem 0;
+    font-weight: 500;
+    margin: 1rem;
+  }
+}
+
+.food-author{
+  color: #959598;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.pagination{
+  font-size: 2.5rem;
+  color: #959598;
+  width: 9.5rem;
+  position: absolute;
+  top: 0.9rem;
+  right: 1rem;
+  a{
+    text-decoration: none;
+    color: #a5a5f8;
+    font-weight: 700;
+  }
+}

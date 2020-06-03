@@ -1,0 +1,15 @@
+<%= link_to (image_tag "back_arrow.png", class: 'back-arrow'), :back %>
+<div class="header" >
+  <h1>ADD NEW GROUP</h1>
+</div>
+<div class="form-div">
+  <%= form_with model: @group, local: true, class: 'signup-form' do |f| %>
+    <% @group.errors.full_messages.each do |error| %>
+      <p class="errors">* <%= error %></p>
+    <% end %>
+    <%= f.text_field :name, placeholder: "Group name", class: 'form-option' %>
+    <%= f.text_field :icon, placeholder: 'Input an image URL (Optional)', class: 'form-option' %>
+    <p class='format-notice'>* (.gif, .jpeg, .jpg or .png)</p>
+    <%= f.submit 'Add', class: 'submit' %>
+  <% end %>
+</div>

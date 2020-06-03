@@ -1,0 +1,25 @@
+<% if @user %>
+  <div class='user-page'>
+    <%= gravatar_image_tag(current_user.email, alt: current_user.name, class: "gravatar", gravatar: { :size => 100 }) %>
+    <h1><%= @user.name %></h1>
+    <div class="link-div">
+      <%= image_tag "grouped.png" %>
+      <%= link_to "All my grouped meals", foods_path(type: "grouped") %>
+    </div>
+    <div class="link-div">
+      <%= image_tag "ungrouped.png" %>
+      <%= link_to "All my ungrouped meals", foods_path %>
+    </div>
+    <div class="link-div">
+      <%= image_tag "groups.png" %>
+      <%= link_to "All groups", groups_path %>
+    </div>
+    <div class="link-div">
+      <%= image_tag "logout.png" %>
+      <%= link_to 'Log out', logout_path, method: :delete, class: "last-link" %>
+    </div>
+    <%= render 'calculate' %>
+  </div>
+<% else %>
+  <%= render 'login' %>
+<% end %>

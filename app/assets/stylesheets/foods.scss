@@ -1,0 +1,105 @@
+// Place all the styles related to the Foods controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.fixed{
+  position: fixed;
+  min-width: 100%;
+  z-index: 1;
+  top: 0;
+  .menu{
+    width: 2rem;
+    position: absolute;
+    top: 0.9rem;
+    left: 1rem;
+  }
+  
+  .food-header{
+    text-align: center;
+    background-color: #326db1;
+    h1{
+      color: #fff;
+      font-size: 1.8rem;
+      margin: 0;
+      padding: 1rem 0;
+      font-weight: 300;
+      font-family: 'Roboto', sans-serif;
+      cursor: default;
+    }
+  }
+  
+  .total-food{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 2rem 1rem;
+    border-bottom: 0.1rem solid #c0c0c5;
+    span{
+      color: #959598;
+      font-size: 2rem;
+    }
+    .total{
+      font-weight: 700;
+      color: #424a53;
+    }
+  }  
+}
+.food-list{
+  margin: 11.5rem 0 8.2rem 0;
+  .each-food{
+    display: flex;
+    background-color: #fff;
+    margin: 1rem;
+    border: 0.1rem solid #c0c0c5;
+    padding: 1rem;
+    align-items: center;
+    .food-icon{
+      color: #959598;
+      font-size: 2rem;
+      width: 9rem;
+      height: 9rem;
+      margin-right: 2rem;
+    }
+    .food-right{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      .name-created{
+        .food-name{
+          color: #959598;
+          font-size: 2rem;
+          margin: 2rem 0 3rem 0;
+        }
+        .created{
+          color: #959598;
+          font-size: 1.3rem;
+          margin: 0;
+        }
+      }
+      .food-amount{
+        font-size: 2rem;
+        font-weight: 700;
+        color: #424a53;
+      }
+    }
+  }  
+}
+
+.add-new{
+  background-color: #60b523;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  a{
+    border: 0.2rem solid #bae1a8;
+    font-size: 1.6rem;
+    color: #dff3da;
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none;
+    padding: 1.5rem 0;
+    font-weight: 500;
+    margin: 1rem;
+  }
+}

@@ -1,0 +1,9 @@
+<div class = "logo">
+  <h1>Food Tracker</h1>
+</div>
+<% if !sign_in? %>
+  <div class = "login">
+    <%= link_to 'Log in', login_path, class: 'sign-in' %>
+    <%= link_to 'Sign up', new_user_path, class: 'sign-up' %>
+  </div>
+<% end %>

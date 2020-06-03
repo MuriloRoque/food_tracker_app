@@ -1,0 +1,13 @@
+<%= link_to (image_tag "back_arrow.png", class: 'back-arrow'), root_path %>
+<div class="header" >
+  <h1>LOGIN</h1>
+</div>
+<div class="form-div">
+  <%= form_for :session, url: login_path, html: {class: 'signup-form'} do |f| %>
+    <% if @error %>
+      <p class="errors">* There are no users with that name!</p>
+    <% end %>
+    <%= f.text_field :name, placeholder: 'Your name here', class: 'form-option' %> 
+    <%= f.submit 'Log in', class: 'submit' %>
+  <% end %> 
+</div>
